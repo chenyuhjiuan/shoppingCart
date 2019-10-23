@@ -36,7 +36,7 @@ public class PasswordResetToken {
 		super ();
 		
 		this.token = token;
-		this.user = user;
+		//this.user = user;
 		this.expiryDate = calculateExpiryDate(EXPIRATION);
 	}
 	
@@ -90,7 +90,7 @@ public class PasswordResetToken {
 
 	@Override
 	public String toString() {
-		return "PasswordResetToken [id=" + id + ", token=" + token + ", user=" + user + ", expiryDate=" + expiryDate
+		return "PasswordResetToken [id=" + id + ", token=" + token + ",  expiryDate=" + expiryDate
 				+ "]";
 	}
 	
